@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./img/Tech Usados/favicon_transparent_32x32.png" type="image" sizes="10x10"> <!-- Ícone -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script async src="javascript/login.js"></script>
+    <script async src="javascript/logincheck.js"></script>
+    <script async src="javascript/loja.js"></script>
+    <title>Tech Usados</title>
+</head>
+<body class="entrar">
+
+    <nav> <!-- Tag de navegação -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <img class="logo" src="./img/Tech Usados/logo_transparente.png" alt="Logo do site"> 
+        
+        <ul class="unordered-list"> <!-- Lista não ordenada -->
+            <li class="lista">
+            <!--Barra de pesquisa-->
+             <div class="barra-box">
+                <div class="lupa">
+                <i class="bi bi-search"></i>
+                </div>
+            
+                <div class="busca">
+                <input type="text" placeholder="Busque algo" id="barraDePesquisa">
+                </div>
+            
+                <div class="botao">
+                <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+            </li> 
+
+            <li class="lista">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="lista">
+                <a href="sobre.html">SOBRE NÓS</a>
+            </li>
+
+            <div class="lista dropdown">
+                <button class="drop-button">
+                    SERVIÇOS <i class="fas fa-sort-down"></i>
+                </button>
+
+                <!-- Começo da lista dropdown -->
+                <div class="drop-content">
+                    <li class="lista">
+                        <a href="#">Opção 1</a>
+                    </li>
+                    
+                    <li class="lista">
+                        <a href="#">Opção 2</a>
+                    </li>
+
+                    <li class="lista">
+                        <a href="#">Opção 3</a>
+                    </li>
+                    
+                </div>
+                
+            </div>
+
+            <li class="lista">
+                <a href="#">CONTATOS</a>
+            </li>
+
+            <li class="lista" id="login">
+                <a href="login.html">LOGIN</a>
+            </li>
+            
+            <div class="lista dropdown-cart">
+                <button class="drop-button">
+                    <img src="img/carrinho.png" width="30px" height="30px"> <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+
+                <!-- Começo da lista dropdown -->
+                <div class="drop-content-cart">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                                               
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="cart-total-container">
+                                    <strong>Total:</strong>
+                                    <span>R$0,00</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button type="button" class="btn btn-success btnBotaoCart purchase-button">Finalizar Compra</button>
+                                     
+                    
+                </div>
+                
+            </div>
+        </ul>
+        
+
+    </nav>
+
+
+    <main>
+    <!--<form action="" method="post" class="form">
+        <label for="nome">Seu nome:</label>
+        <input type="text" name="nome" id="nome" required> 
+        <label for="senha">Seu senha:</label>
+        <input type="password" name="senha" id="senha" required>
+    </form> -->
+
+    <div class="login-caixa">
+		<h1 class="display-5">Login</h1>
+		<div class="caixa-texto">
+			<i class="fas fa-user"></i><input type="text" name="nome" id="nome" placeholder="Usuário" required="required">
+		</div>
+
+		<div class="caixa-texto">
+			<i class="fas fa-lock"></i><input type="password" name="password" id="senha" placeholder="Senha" required="required">
+			<button class="btn btn-dark" formmethod="post" form="form" onclick="substituir()">Enviar</button>
+            <button class="btn btn-dark" type="button" formmethod="post" onclick="unLog()">Deslogar</button>
+		</div>
+		
+	</div>
+
+    
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div class="coluna-esquerda">
+            
+            <div class="redes-sociais">
+               <a href="#"> <i class="fab fa-facebook-f"></i></a> 
+               
+               <a href="#"> <i class="fab fa-instagram"></i></a> 
+
+               <a href="#"><i class="fab fa-youtube"></i></a>
+
+               <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <p class="direitos-autorais"> © 2023 Criado pelos guri né pae</p>
+        </div>
+            <div class="coluna-direita">
+                <h1>Cadastre-se</h1>
+
+                <div class="borda"></div>
+                <p>Cadastre seu email aqui</p>
+                <form action="" class="formulario">
+                    <input type="email" class="txtb" placeholder="Entre com seu email aqui">
+                    <input type="submit" class="btn" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+
+        
+    </footer>
+
+</body>
+</html>

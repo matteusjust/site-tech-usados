@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{ 
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+}
+
+
+/* Estilos para a seção principal */
+.Conteudo-pagina {
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para as seções individuais (Promoções e Empresas Parceiras) */
+#promocoes{
+    margin-top: 120px;
+}
+
+#promocoes, #empresasParceiras {
+    padding: 20px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos para os artigos (produtos e empresas) */
+.promocoesDoDia, .empresas {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para a imagem do produto/empresa */
+.promocoesDoDia img, .empresas img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promocoesDoDia button{
+    margin-left: 0px;
+}
+
+/* Estilos para o título do produto/empresa */
+.produto {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Estilos para o preço do produto */
+.preco {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Estilos para o preço em promoção */
+.promocaoFogo {
+    color: #f00;
+    text-shadow: 0 0 5px #FF3, 0 0 10px #F90, 0 0 20px #C33;
+}
+
+/* Estilos para o botão "Comprar" */
+.comprar {
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* Estilos para os contêineres de artigos */
+.artigos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Pagina sobre nós*/
+
+.sobre
+{
+    background-color:rgb(255, 253, 253);
+    max-width: 1300px;
+    
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-top: 200px;
+
+}
+
+.titulo
+{
+    color: purple;
+    text-align: justify;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.conteudo
+{
+    color: purple;
+    max-width: 1300px;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-weight: 300;
+}    
+
+
+.entrar{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open-sans', sans-serif;
+	background: url(img/cafe.jpg) no-repeat;
+	background-size: cover;
+	
+}
+.login-caixa{
+	width: 280px;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	color: white;
+
+}
+
+.login-caixa h1{
+	float: left;
+	border-bottom: 6px solid #00bcd4;
+	margin-bottom: 50px;
+	margin: 13px 0;
+
+}
+.caixa-texto{
+	width: 100%;
+	overflow: hidden;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid #00bcd4; 
+}
+
+.caixa-texto i{
+	width: 26px;
+	float: left;
+	text-align: center;
+}
+.caixa-texto input{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin: 10px;
+}
+
