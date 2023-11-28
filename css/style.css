@@ -154,6 +154,7 @@ body{
 	border-bottom: 6px solid #00bcd4;
 	margin-bottom: 50px;
 	margin: 13px 0;
+	color: black;
 
 }
 .caixa-texto{
@@ -173,7 +174,7 @@ body{
 	border: none;
 	outline: none;
 	background: none;
-	color: white;
+	color: black;
 	font-size: 18px;
 	width: 80%;
 	float: left;
